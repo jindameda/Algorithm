@@ -5,8 +5,8 @@ let input = fs.readFileSync(filePath).toString().split("\n");
 let answer = "";
 
 for (let i = 1; i <= input[0]; i++) {
-  tmp = input[i].split(" ");
-  answer += parseInt(tmp[0]) + parseInt(tmp[1]) + "\n";
+  const [a, b] = input[i].split(" ");
+  answer += parseInt(a) + parseInt(b) + "\n";
 }
 
 console.log(answer);
