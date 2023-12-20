@@ -1,5 +1,5 @@
 let info = require("fs")
-  .readFileSync(0)
+  .readFileSync("/dev/stdin")
   .toString()
   .trim()
   .split("\n")
