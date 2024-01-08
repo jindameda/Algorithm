@@ -18,9 +18,8 @@ for (let i = 0; i < N; i++) {
   }
 }
 
-const result = newArr
-  .map((v) => M - v)
-  .indexOf(Math.min(...newArr.map((v) => M - v)));
+const minus = newArr.map((v) => M - v);
+const result = minus.indexOf(Math.min(...minus));
 
 if (newArr.includes(M)) return console.log(M);
 console.log(newArr[result]);
