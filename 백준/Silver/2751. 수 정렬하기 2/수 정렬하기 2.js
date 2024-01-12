@@ -3,7 +3,6 @@ const info = require("fs")
   .toString()
   .trim()
   .split("\n");
-
 const cnt = info.shift();
-
-console.log(info.sort((a, b) => a - b).join("\n"));
+const result = info.sort((a, b) => a - b);
+console.log(result.join("\n"));
